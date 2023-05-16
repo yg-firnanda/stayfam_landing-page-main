@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="rel" as="https://i.postimg.cc/FHj2y9rL/header.jpg">
+	<link rel="rel" as="https://i.postimg.cc/V61845mq/all1.jpg">
+	<link rel="rel" as="https://i.postimg.cc/zBtqB8YT/all2.jpg">
+	<link rel="rel" as="https://i.postimg.cc/y8Zxbg4t/all3.jpg">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<link rel="icon" href="https://i.postimg.cc/YqxY31Ww/building-house-solid-24-removebg-preview.png">
+    <title>Stayfam - Real Estate Agency</title>
+</head>
+<body>
+	<div id="overlay"></div>
+	<header class="header" id="header">
+		<div class="navbar">
+			<div class="container">
+				<nav>
+					<div class="logo">
+						<a href="#">
+							<h1><i class='bx bxs-building-house'></i>Stayfam</h1>
+						</a>
+					</div>
+					<ul class="nav-links">
+						<li>
+							<a href="#home">Home</a>
+						</li>
+						<li>
+							<a href="services.html">Services</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="#about">About</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<div class="cta">
+						<a href="login.html">
+							<button class="btn-nav login">Log In</button>
+						</a>
+						<a href="signup.html">
+							<button class="btn-nav signup">Sign Up</button>
+						</a>
+					</div>
+					<div class="menu" id="menu">
+						<i class="uil uil-bars"></i>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<aside class="slide-menu">
+			<div class="close" id="close">
+				<i class="uil uil-multiply"></i>
+			</div>
+			<ul class="top">
+				<li>
+					<a href="#header">Home</a>
+				</li>
+				<li>
+					<a href="#home">Services</a>
+				</li>
+				<li>
+					<a href="#home">Blog</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#home" target="_blank">Contact</a>
+				</li>
+			</ul>
+			<div class="cta">
+				<a href="login.html">
+					<button class="btn-nav login">Log In</button>
+				</a>
+				<a href="signup.html">
+					<button class="btn-nav signup">Sign Up</button>
+				</a>
+			</div>
+		</aside>
+		<div class="header-content container">
+			<div class="text-box">
+				<div class="text">
+					<h2>Find the perfect place to stay with your family</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio facilis excepturi, incidunt quod obcaecati minima commodi perspiciatis.</p>
+				</div>
+				<div class="input">
+					<input type="search" name="" id="" placeholder="Enter Keyword . .">	
+					<div class="search">
+						<i class="uil uil-search"></i>
+					</div>
+				</div>
+				<div class="data-info">
+					<div class="data-item">
+						<div class="number">
+							<h4 class="num" data-val="7">0</h4>K
+							<span>+</span>
+						</div>
+						<div class="title">
+							<h5>Number of<br>Real Estate</h5>
+						</div>
+					</div>
+					<div class="data-item">
+						<div class="number">
+							<h4 class="num" data-val="4">0</h4>K
+							<span>+</span>
+						</div>
+						<div class="title">
+							<h5>Happy<br>Customer</h5>
+						</div>
+					</div>
+					<div class="data-item">
+						<div class="number">
+							<h4 class="num" data-val="12">0</h4>K
+							<span>+</span>
+						</div>
+						<div class="title">
+							<h5>Daily<br>Customer</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="img-box">
+				<img src="https://i.postimg.cc/FHj2y9rL/header.jpg" alt="header-img" loading="lazy">
+				<div class="overlay"></div>
+			</div>
+		</div>
+	</header>
+
+	<section class="catalog container sec-padding" id="catalog">
+		<div class="section-title">
+			<h3>Find Best Real Estates</h3>
+		</div>
+		<ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="residental-tab" data-bs-toggle="pill" data-bs-target="#residental" type="button" role="tab" aria-controls="residental" aria-selected="false">Residental</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="commercial-tab" data-bs-toggle="pill" data-bs-target="#commercial" type="button" role="tab" aria-controls="commercial" aria-selected="false">Commercial</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="cottage-tab" data-bs-toggle="pill" data-bs-target="#cottage" type="button" role="tab" aria-controls="cottage" aria-selected="false">Cottage</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="industrial-tab" data-bs-toggle="pill" data-bs-target="#industrial" type="button" role="tab" aria-controls="industrial" aria-selected="false">Industrial</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+				<div class="catalog-type">
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Wildridge Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>1148 S Railroad Ave, Bronxville, New York 10708</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/V61845mq/all1.jpg" alt="all1" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Albion Cottage</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>7372 Lathrop Ave, Kansas City, Kansas 66109</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/zBtqB8YT/all2.jpg" alt="all2" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Bold Realty	Beacon Homes LLC</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4118 165th St, Lawndale, California 90260</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/y8Zxbg4t/all3.jpg" alt="all3" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Montmier Residence</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>1513 Springland Ave, Michigan City, Indiana 46360</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/bNFSMfGD/all4.jpg" alt="all4" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Edgeriver Residence</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>124 Meadow Rd, Ignacio, Colorado 81137</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/PrG58f8M/all5.jpg" alt="all5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Bouldercove Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>7434 Wall Triana Hwy, Madison, Alabama 35757</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/28vfp4yQ/all6.jpg" alt="all6" loading="lazy">
+						</div>
+					</div> 
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Frankstone Manor</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>1392 Crestview Ave, Decatur, Arkansas 72722</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/3NGrbVzp/all7.jpg" alt="all7" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Crystalcreek Residence</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4116 Nichandros St, Castro Valley, California 94546</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/fLh9K7V8/all8.jpg" alt="all8" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="residental" role="tabpanel" aria-labelledby="residental-tab" tabindex="0">
+				<div class="catalog-type">
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Agile Real Estate Group</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>6400 Bridge Bay, Rogers, Arkansas 72758</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/q7WLdCzK/all9.jpg" alt="res1" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Privet Group Real Property</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4782 Kona Kove Way, Yorba Linda, California 92886, USA</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/g0t7LJrc/all10.jpg" alt="res2" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Stellar Property Advisors</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>440 Honey Hill Rd, Wewahitchka, Florida 32465</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/QM771YdB/all11.jpg" alt="res3" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Seekers Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>405 W Dallas St, Mount Vernon, Missouri 65712</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/13nV176W/all12.jpg" alt="res4" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Forward Real Estate Advisors</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>288 Bennetts Ln, Somerset, New Jersey 08873</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/4d5QH2W6/all13.jpg" alt="res5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Citadel Partners Realty	</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4815 Hope Rd, Butte, Montana 59701</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/MTF8w51D/all14.jpg" alt="res5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Home & Hearth Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>19900 SE 212nd Hwy, Clackamas, Oregon 97015</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/gcL0JLrJ/all15.jpg" alt="res7" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="commercial" role="tabpanel" aria-labelledby="commercial-tab" tabindex="0">
+				<div class="catalog-type">
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Bluebell Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>323 E 400th S, Kanab, Utah 84741</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/Z5bZrWY6/all16.jpg" alt="com1" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Carpe Diem Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>739 Gaillard Rd, Moncks Corner, South Carolina 29461</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/wMR3Y7R1/all25.jpg" alt="com2" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Haven Group Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>245 Goodnow Rd, Montpelier, Vermont 05602</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/qMnX87DB/all17.jpg" alt="com3" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Cardinal Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>One Micro Soft Way, Redmond, Washington 98052</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/KzZnbrmR/all18.jpg" alt="com4" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Sterling Property Advisors</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>34 Wolf Pond Rd, Wurtsboro, New York 12790</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/g22Fx14D/all19.jpg" alt="com5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Blue Reef Properties</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>440 Fernshire Dr, Palm Harbor, Florida 34683</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/QNmfFCz2/all20.jpg" alt="com6" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Magnolia Group Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>3219 E Ramsey Ave, Cudahy, Wisconsin 53110</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/501m0WS9/all21.jpg" alt="com7" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="cottage" role="tabpanel" aria-labelledby="cottage-tab" tabindex="0">
+				<div class="catalog-type">
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Picket Fence Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>1071 Donegan Rd, Largo, Florida 33771</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/zBtqB8YT/all2.jpg" alt="cot1" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Azure Crest Pinnacle Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>Corporate Office 1102, Algoma, Wisconsin 54201</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/nL1D3jqZ/all22.jpg" alt="cot2" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Granite Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>2001 Edmund Halley Dr, Reston, Virginia 20191</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/ZqmNPFBV/all23.jpg" alt="cot3" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Brick Lane Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4117 Bridgeport Rd, Santa Maria, California 93455</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/pT6ySDrN/all24.jpg" alt="cot4" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Landmark Realty Group</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>883 Vanasse Rd, Kettle Falls, Washington 99141</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/wMR3Y7R1/all25.jpg" alt="cot5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Banyan Tree Realty</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>750 4th St, Mills, Wyoming 82644</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/13nV176W/all12.jpg" alt="cot6" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab" tabindex="0">
+				<div class="catalog-type">
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Equitable Property Group</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4773 Moorpark Ave, Moorpark, California 93021</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/y8Zxbg4t/all3.jpg" alt="indi1" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Apogee Property Advisors</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>38 Vincent St, Rockville Centre, New York 11570</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/4d5QH2W6/all13.jpg" alt="indi2" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Magnolia Group Real Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>19038 Frenchtown Frontage Rd, Frenchtown, Montana 59834</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/MTF8w51D/all14.jpg" alt="indi3" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Humblecreek Residence</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>800 Fiske Blvd, Cocoa, Florida 32922</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/q7WLdCzK/all9.jpg" alt="indi4" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Stonewin Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>4853 Roach Rd, Salt Rock, West Virginia 25559</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/501m0WS9/all21.jpg" alt="indi5" loading="lazy">
+						</div>
+					</div>
+					<div class="catalog-item">
+						<div class="overlay overlay-blur">
+							<div class="details">
+								<h5>Skinburg Estate</h5>
+								<div class="info">
+									<i class='bx bx-map'></i>
+									<p>724 Alder St, Edmonds, Washington 98020</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-box">
+							<img src="https://i.postimg.cc/Z5bZrWY6/all16.jpg" alt="indi6" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="load-more" id="load-more">
+			<button class="btnlong">Load More</button>
+		</div>
+	</section>
+
+	<section class="about container" id="about">
+		<div class="about-container">
+			<div class="img-box">
+				<div class="img-item">
+					<img src="https://i.postimg.cc/FHVk2LFs/about1.jpg" alt="about1" loading="lazy">
+				</div>
+				<div class="img-item">
+					<img src="https://i.postimg.cc/65YNg6Jx/about2.jpg" alt="about2" loading="lazy">
+				</div>
+				<div class="img-item">
+					<img src="https://i.postimg.cc/L5DGcDW3/about3.jpg" alt="about3" loading="lazy">
+				</div>
+			</div>
+			<div class="text-box">
+				<div class="content-title">
+					<h4>Your House Is Not A Liability, It Is An Asset</h4>
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat in, corrupti optio voluptates accusamus dolores praesentium earum fugiat nulla itaque maxime voluptatum rerum qui? Aliquid, doloribus totam? Repellat, omnis iure.</p>
+				<div class="explore-btn">
+					<button class="btnlong">Explore Details</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="deals container" id="deals">
+		<div class="top">
+			<div class="section-title">
+				<h3>Best Deals For You</h3>
+			</div>
+			<div class="section-p">
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quam veritatis molestiae.
+				</p>
+			</div>
+		</div>
+		<div class="deals-container deals1">
+                <div class="jumbo">
+					<div class="img-jumbo" class="w-100 h-auto">
+						<img src="https://i.postimg.cc/Vk2sZsnL/deals1-jumbo.jpg" alt="deals1-header" class="w-100 h-100" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="text-content">
+							<div class="title">
+								<div class="home-name">
+									<h5><span>Peaceful Edge Home</span></h5>
+								</div>
+								<div class="home-address">
+									<h5>Angel Knolls, North Haleighhaven, Iowa</h5>
+								</div>
+							</div>
+							<div class="price">
+								<span>$345,000</span>
+								<h4>$300,000</h4>
+							</div>
+						</div>
+						<div class="detail-container">
+							<div class="detail-item">
+								<p>Bedrooms</p>
+								<span>1</span><i class='bx bx-bed'></i>
+							</div>
+							<div class="detail-item">
+								<p>Built</p>
+								<span>2018</span>
+							</div>
+							<div class="detail-item">
+								<p>Bathrooms</p>
+								<span>2</span><i class="uil uil-bath"></i>
+							</div>
+							<div class="detail-item">
+								<p>Area</p>
+								<span>1,300ft</span>
+							</div>
+						</div>
+					</div>
+                </div>
+				<div class="img-content">
+					<div class="mini-img">
+						<div class="img-item">
+							<img src="https://i.postimg.cc/gcyDYn2Q/deals11.jpg" alt="deals1-images" class="w-100 h-100" loading="lazy">
+						</div>
+						<div class="img-item">
+							<img src="https://i.postimg.cc/xCMPNdyk/deals12.jpg" alt="deals1-images" class="w-100 h-100" loading="lazy">
+						</div>
+						<div class="img-item">
+							<img src="https://i.postimg.cc/4NbFFWcK/deals13.jpg" alt="deals1-images" class="w-100 h-100" loading="lazy">
+						</div>
+						<div class="img-item">
+							<img src="https://i.postimg.cc/QxyjVN6k/deals14.jpg" alt="deals1-images" class="w-100 h-100" loading="lazy">
+						</div>
+					</div>
+					<div class="text-box">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur quas delectus, quod explicabo placeat non voluptas. Modi provident sapiente iure mollitia culpa, assumenda ipsam porro, nam velit fugit debitis.</p>
+						<div class="contact-btn">
+							<button class="btnlong">Contact Now <i class="uil uil-arrow-right"></i></button>
+						</div>
+					</div>
+				</div>
+		</div>
+
+        <div class="deals-container">
+			<div class="jumbo">
+				<div class="img-jumbo" class="w-100 h-auto">
+					<img src="https://i.postimg.cc/c4XBn2Yc/deals2-jumbo.jpg" alt="deals2-header" class="w-100 h-100" loading="lazy">
+				</div>
+				<div class="text-box">
+					<div class="text-content">
+						<div class="title">
+							<div class="home-name">
+								<h5>Retro Groove Palace</h5>
+							</div>
+							<div class="home-address">
+								<h5>Schuster, Port Jerel, Oklahoma</h5>
+							</div>
+						</div>
+						<div class="price">
+							<span>$345,000</span>
+							<h4>$300,000</h4>
+						</div>
+					</div>
+					<div class="detail-container">
+						<div class="detail-item">
+							<p>Bedrooms</p>
+							<span>1</span><i class='bx bx-bed'></i>
+						</div>
+						<div class="detail-item">
+							<p>Built</p>
+							<span>2018</span>
+						</div>
+						<div class="detail-item">
+							<p>Bathrooms</p>
+							<span>2</span><i class="uil uil-bath"></i>
+						</div>
+						<div class="detail-item">
+							<p>Area</p>
+							<span>1,300ft</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="img-content">
+				<div class="mini-img">
+					<div class="img-item">
+						<img src="https://i.postimg.cc/Rhvw3LZ8/deals21.jpg" alt="deals2-images" class="w-100 h-100" loading="lazy">
+					</div>
+					<div class="img-item">
+						<img src="https://i.postimg.cc/dVhrT1Jq/deals22.jpg" alt="deals2-images" class="w-100 h-100" loading="lazy">
+					</div>
+					<div class="img-item">
+						<img src="https://i.postimg.cc/sDDpsm8G/deals23.jpg" alt="deals2-images" class="w-100 h-100" loading="lazy">
+					</div>
+					<div class="img-item">
+						<img src="https://i.postimg.cc/fR1X7NbY/deals24.jpg" alt="deals2-images" class="w-100 h-100" loading="lazy">
+					</div>
+				</div>
+				<div class="text-box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, optio placeat iure hic eligendi porro illo dolor vero iusto corporis voluptates, nisi dolorum ducimus praesentium unde odit dignissimos similique quas.</p>
+					<div class="contact-btn">
+						<button class="btnlong">Contact Now <i class="uil uil-arrow-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="featured container" id="featured">
+		<div class="section-title">
+			<h3>Featured Properties</h3>
+		</div>
+		<div class="featured-container swiper">
+			<div class="swiper-wrapper">
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/XJjK7grD/featured1.jpg" alt="featured1" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Summer Meadow House</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>173000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>2284 Felosa Drive, Los Angeles, California 90017</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/tTJ1MvZy/featured2.jpg" alt="featured2" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Old Groove House</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>145000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>3549 Jim Rosa Lane, San Rafael, California 94901</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/j51hg7jg/featured3.jpg" alt="featured3" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Restful Woods Cabin</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>98000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>753 Church Street, Brooklyn, New York 11209</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/fyb6XXr8/featured4.jpg" alt="featured4" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Stylish Groove Home</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>149000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>4808 Calvin Street, Easton, Maryland 21601</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/d0qnLFXB/featured5.jpg" alt="featured5" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Vintage Leaf Cabin</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>193000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>160 Mattson Street, Portland, Oregon 97212</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/tg5S5JPw/featured6.jpg" alt="featured6" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Restful Pinecone Mansion</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>152000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>4182 Coffman Alley, Bowling Green, Kentucky 40475</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/KckXZ7tY/featured7.jpg" alt="featured7" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Heavenly Fern Place</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>135000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>3567 Shobe Lane, Clifton, Colorado 81520</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="featured-item swiper-slide">
+					<div class="img-box">
+						<img src="https://i.postimg.cc/L61xWNLz/featured8.jpg" alt="featured8" loading="lazy">
+					</div>
+					<div class="text-box">
+						<div class="info">
+							<h5>Sunny Pine Cottage</h5>
+							<div class="features">
+								<div class="feature">
+									<i class='bx bx-bed'></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class="uil uil-bath"></i>
+									<p>2</p>
+								</div>
+								<div class="feature">
+									<i class='bx bx-dollar-circle'></i>
+									<p>50000</p>
+								</div>
+							</div>
+							<div class="address">
+								<div class="icon">
+									<i class='bx bx-map'></i>
+								</div>
+								<p>611 Lakewood Drive, Jersey City, New Jersey 07304</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-btn">
+				<div class="btn-next">
+					<i class='bx bx-right-arrow-alt'></i>
+				</div>
+            	<div class="btn-prev">
+					<i class='bx bx-left-arrow-alt'></i>
+				</div>
+			</div>
+            <div class="swiper-pagination pagination"></div>
+		</div>
+	</section>
+
+	<section class="testimonial container" id="testimonial">
+		<div class="content-title">
+			<h3>Testimonials</h3>
+		</div>
+		<div class="testimonial-container swiper">
+            <div class="swiper-wrapper">
+                
+                <div class="testimonial-item swiper-slide">
+                    <div class="profile">
+                        <div class="img-box">
+                            <img src="https://i.postimg.cc/3xS58tfd/person1.jpg" alt="testimonial-item" loading="lazy">
+                        </div>
+                        <div class="coment">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit error, nihil facere nesciunt illo officia est ipsam illum voluptas quisquam at, quas repudiandae culpa quae ab! Ut, repudiandae ab!
+                            </p>
+							<div class="name">
+								<h5>Kevin Hugo</h5>
+							</div>
+                        </div>
+						<div class="quote">
+							<i class='bx bxs-quote-right'></i>
+						</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item swiper-slide">
+                    <div class="profile">
+                        <div class="img-box">
+                            <img src="https://i.postimg.cc/7Z0X1zyg/person2.jpg" alt="testimonial-item" loading="lazy">
+                        </div>
+                        <div class="coment">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit error, nihil facere nesciunt illo officia est ipsam illum voluptas quisquam at, quas repudiandae culpa quae ab! Ut, repudiandae ab!
+                            </p>
+							<div class="name">
+								<h5>Paul Roxanne</h5>
+							</div>
+                        </div>
+						<div class="quote">
+							<i class='bx bxs-quote-right'></i>
+						</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item swiper-slide">
+                    <div class="profile">
+                        <div class="img-box">
+                            <img src="https://i.postimg.cc/QMFLHcvS/person3.jpg" alt="testimonial-item" loading="lazy">
+                        </div>
+                        <div class="coment">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit error, nihil facere nesciunt illo officia est ipsam illum voluptas quisquam at, quas repudiandae culpa quae ab! Ut, repudiandae ab!
+                            </p>
+							<div class="name">
+								<h5>Rylee Addison</h5>
+							</div>
+                        </div>
+						<div class="quote">
+							<i class='bx bxs-quote-right'></i>
+						</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item swiper-slide">
+                    <div class="profile">
+                        <div class="img-box">
+                            <img src="https://i.postimg.cc/7Z0yY0TP/person4.jpg" alt="testimonial-item" loading="lazy">
+                        </div>
+                        <div class="coment">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit error, nihil facere nesciunt illo officia est ipsam illum voluptas quisquam at, quas repudiandae culpa quae ab! Ut, repudiandae ab!
+                            </p>
+							<div class="name">
+								<h5>Philippe Nicolas</h5>
+							</div>
+                        </div>
+						<div class="quote">
+							<i class='bx bxs-quote-right'></i>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev swiper-navBtn">
+				<i class='bx bx-chevron-left'></i>
+			</div>
+            <div class="swiper-button-next swiper-navBtn">
+				<i class='bx bx-chevron-right'></i>
+			</div>
+        </div>
+	</section>
+
+	<section class="subscribe container" id="subscribe">
+		<div class="subscribe-container">
+			<div class="img-box">
+				<img src="https://i.postimg.cc/g22Fx14D/all19.jpg" loading="lazy">
+			</div>
+			<div class="text-box">
+				<div class="subscribe-content">
+					<div class="section-title">
+						<h4>Subscribe to Our Newsletter</h4>
+					</div>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime in ipsum eligendi quia nesciunt.
+					</p>
+				</div>
+				<div class="input-subscribe">
+					<input type="email" placeholder="Enter Your Email">
+					<button class="btnlong">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer" id="footer">
+		<div class="footer-container container">
+			<div class="footer-item extra">
+				<div class="logo">
+					<h1><i class='bx bxs-building-house'></i>StayFam</h1>
+				</div>
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores veniam, dolore non repudiandae ipsam dolores deleniti ratione.</p>
+			</div>
+			<div class="footer-item">
+				<h5>Resources</h5>
+				<ul>
+					<li><a href="#">Our Agents</a></li>
+					<li><a href="#">Stories</a></li>
+					<li><a href="#">Video</a></li>
+					<li><a href="#">Trial</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Company</h5>
+				<ul>
+					<li><a href="#">Partnerships</a></li>
+					<li><a href="#">Terms of Use</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Support</h5>
+				<ul>
+					<li><a href="#">FAQs</a></li>
+					<li><a href="#">Support Center</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Security</a></li>
+				</ul>
+			</div>
+			<div class="footer-item">
+				<h5>Follow Us</h5>
+				<div class="social-links">
+					<li><a href="#">
+							<i class='bx bxl-instagram'></i>
+						</a></li>
+					<li><a href="#">
+							<i class='bx bxl-youtube'></i>
+						</a></li>
+					<li><a href="#">
+							<i class='bx bxl-linkedin-square'></i>
+						</a></li>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright container">
+		<p>&copy; <a href="https://www.instagram.com/firnanda.dev/" target="_blank">Firnanda</a>. All rights reserved.</p>
+		<div class="right">
+			<a href="#">
+				<p>Terms & Agreements</p>
+			</a>
+			<a href="#">
+				<p>Privacy Policy</p>
+			</a>
+		</div>
+	</div>
+
+	<div class="page-loader">
+		<div class="spinner"></div>
+	</div>
+
+	<script src="./assets/js/swiper-bundle.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	<script src="./assets/js/popper.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+	<script>
+		ScrollReveal({
+			distance: '60px',
+			duration: 2500,
+			delay: 400
+		});
+		ScrollReveal().reveal('.text', { delay: 500, origin: 'left' });
+		ScrollReveal().reveal('.input', { delay: 600, origin: 'bottom' });
+		ScrollReveal().reveal('.data-info .data-item', { delay: 700, interval: 400, opacity: 0 });
+		ScrollReveal().reveal('.header-content .img-box', { delay: 1200});
+    </script> 
+</body>
+</html>
+
