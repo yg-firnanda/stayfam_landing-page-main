@@ -3,7 +3,7 @@
 ### About
 Property agency website.<br>
 You can visit link below to visit the real webpage<br>
-<a href="stayfam.vercel.app">stayfam.vercel.app</a>
+<a href="stayfam.vercel.app" target="_blank">stayfam.vercel.app</a>
 ### Usage
 You need to install some package if you want to use this code, just write command below in your terminal
 ```
